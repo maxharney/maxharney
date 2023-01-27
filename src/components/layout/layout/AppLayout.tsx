@@ -6,7 +6,7 @@ const AppLayout = ({children}: PropsWithChildren<unknown>): JSX.Element => {
     return (
         <SynthWaveLayout>
             <AppContainer variant={'fullScreen'}>
-                <AppContainer>
+                <AppContainer sx={{ py: 4 }}>
                     {children}
                 </AppContainer>
             </AppContainer>

@@ -11,7 +11,8 @@
 
   --sky-line: 7px;
   --sun-size: 50vh;
-  --ground-size: 45vh;
+  --sun-offset: 70vh;
+  --ground-size: 8vh;
   --ground-line: 23px;
   --ground-speed: 8s;
 
@@ -61,7 +62,7 @@
   position: absolute;
   z-index: 2;
 
-  top: 0;
+  top: var(--sun-offset);
   bottom: 0;
   left: 0;
   right: 0;
