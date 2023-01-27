@@ -111,10 +111,12 @@ const IndexPage: React.FC<PageProps> = () => {
                            backgroundImage: (theme) => `linear-gradient(
                                 to bottom, 
                                 ${alpha('yellow', 0.5)(theme)}, 
-                                ${alpha('pink', 0.8)(theme)}
+                                ${alpha('pink', 0.9)(theme)}
                             )`,
-                           borderRadius: 4,
-                           boxShadow: (theme) => `4px 4px 2px 1px ${alpha('darkblue', .75)(theme)}`,
+                           borderRadius: 8,
+                           borderWidth: 4,
+                           borderColor: alpha('darkblue', 0.7),
+                           borderStyle: 'solid'
                        }}/>
             </AppFlex>
         </AppRoot>
