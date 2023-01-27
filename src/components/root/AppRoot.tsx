@@ -1,14 +1,14 @@
 import React, {PropsWithChildren} from "react";
-import {ThemeProvider} from "theme-ui";
-import {roboto} from "@theme-ui/presets";
+import {ThemeProvider, Theme} from "theme-ui";
 
 import {AppLayout} from "../layout";
+import { vapor } from '../../themes';
 
 import '../../assets/css/styles.css';
 
 const AppRoot = ({children}: PropsWithChildren<unknown>): JSX.Element => {
 
-    return <ThemeProvider theme={roboto}>
+    return <ThemeProvider theme={vapor}>
         <AppLayout>
             {children}
         </AppLayout>

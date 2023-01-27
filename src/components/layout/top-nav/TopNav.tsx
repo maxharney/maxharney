@@ -9,7 +9,7 @@ const TopNav = (): JSX.Element => {
         <AppContainer sx={{my: 'auto'}}>
             <AppFlex direction={'column'} variant={'unpadded'}>
                 <AppFlex direction={'row'} sx={{mt: 4}}>
-                    <Heading as={'h3'}>Max Harney</Heading>
+                    <Heading variant={"eyebrow"}>Max Harney</Heading>
                 </AppFlex>
 
                 <Divider sx={{borderColor: 'muted'}}/>
