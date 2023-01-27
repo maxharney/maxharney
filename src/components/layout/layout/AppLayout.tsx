@@ -1,21 +1,16 @@
 import React, {PropsWithChildren} from 'react';
-
-import {AppFlex} from "../flex";
-import {TopNav} from "../top-nav";
 import AppContainer from "../container/AppContainer";
+import SynthWaveLayout from "./SynthWaveLayout";
 
 const AppLayout = ({children}: PropsWithChildren<unknown>): JSX.Element => {
-
     return (
-        <AppContainer variant={'fullScreen'} sx={{backgroundColor: 'background'}}>
-            <AppFlex>
-                <TopNav/>
-
+        <SynthWaveLayout>
+            <AppContainer variant={'fullScreen'}>
                 <AppContainer>
                     {children}
                 </AppContainer>
-            </AppFlex>
-        </AppContainer>
+            </AppContainer>
+        </SynthWaveLayout>
     );
 }
 

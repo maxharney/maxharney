@@ -1,7 +1,8 @@
-import { Theme, merge } from 'theme-ui';
-import { base } from '@theme-ui/presets';
+import {bulma} from '@theme-ui/presets';
+import {Theme} from "theme-ui";
 
-export default merge(base, {
+const vapor: Theme = {
+    ...bulma,
     colors: {
         lightblue: '#5cecffff',
         darkblue: '#0a0c37ff',
@@ -10,4 +11,6 @@ export default merge(base, {
         pink: '#ff61c6ff',
         mutedblue: '#375971ff'
     }
-})
+};
+
+export default vapor;

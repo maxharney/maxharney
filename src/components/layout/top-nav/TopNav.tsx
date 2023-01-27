@@ -1,6 +1,6 @@
 import React from 'react';
 import {AppFlex} from "../flex";
-import {Divider, Heading} from "theme-ui";
+import {Divider, Heading, Paragraph} from "theme-ui";
 import AppContainer from "../container/AppContainer";
 
 const TopNav = (): JSX.Element => {
@@ -9,10 +9,16 @@ const TopNav = (): JSX.Element => {
         <AppContainer sx={{my: 'auto'}}>
             <AppFlex direction={'column'} variant={'unpadded'}>
                 <AppFlex direction={'row'} sx={{mt: 4}}>
-                    <Heading variant={"eyebrow"}>Max Harney</Heading>
+                    <Paragraph>
+                        <Heading as={'h1'}>Max Harney</Heading>
+                    </Paragraph>
+
+                    <AppFlex sx={{ ml: 'auto'}}>
+                        testing...
+                    </AppFlex>
                 </AppFlex>
 
-                <Divider sx={{borderColor: 'muted'}}/>
+                <Divider sx={{backgroundColor: '', mx: 0}}/>
             </AppFlex>
         </AppContainer>
     );

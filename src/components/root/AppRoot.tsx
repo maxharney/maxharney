@@ -1,5 +1,5 @@
 import React, {PropsWithChildren} from "react";
-import {ThemeProvider, Theme} from "theme-ui";
+import {ThemeProvider} from "theme-ui";
 
 import {AppLayout} from "../layout";
 import { vapor } from '../../themes';
