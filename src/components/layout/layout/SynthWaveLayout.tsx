@@ -1,5 +1,4 @@
 import React, {PropsWithChildren, useEffect, useRef} from 'react';
-import {Box} from "theme-ui";
 
 import '../../../assets/css/synthwave.css';
 

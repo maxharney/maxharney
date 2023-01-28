@@ -7,23 +7,17 @@ import {AppFlex, AppRoot, DocumentHead} from "../components";
 
 // @ts-ignore
 import Face from '../assets/images/face.png';
+import '../assets/css/styles.css';
 
 const imageWidth = 256;
 
-const IndexPage: React.FC<PageProps> = () => {
+const AboutPage: React.FC<PageProps> = () => {
     return (
         <AppRoot>
             <AppFlex direction={'row'}>
                 <Card sx={{ backgroundColor: alpha('white', 0.25), p: 4 }}>
                     <Paragraph>
-                        The standard Lorem Ipsum passage, used since the 1500s
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum."
+                        ABOUT PAGE
                     </Paragraph>
                 </Card>
                 {/*<AppFlex variant={'slim'}>*/}
@@ -43,6 +37,6 @@ const IndexPage: React.FC<PageProps> = () => {
     )
 }
 
-export default IndexPage
+export default AboutPage
 
-export const Head = () => <DocumentHead/>;
+export const Head = () => <DocumentHead title={"About Me"}/>;
